@@ -1,7 +1,7 @@
 package main;
 
-import java.util.*;
 import abstracts.Pegawai;
+import java.util.*;
 import subClass.Designer;
 import subClass.Programmer;
 
