@@ -12,10 +12,10 @@ public class Perusahaan {
         
         try {
             System.out.print("Masukkan nama Programmer: ");
-            String namaProg = scanner.nextLine();
+            String namaProgrammer = scanner.nextLine();
             System.out.print("Masukkan gaji Programmer: ");
-            double gajiProg = Double.parseDouble(scanner.nextLine());
-            daftarPegawai.add(new Programmer(namaProg, gajiProg, Arrays.asList("Java", "Python")));
+            double gajiProgrammer = Double.parseDouble(scanner.nextLine());
+            daftarPegawai.add(new Programmer(namaProgrammer, gajiProgrammer, Arrays.asList("Java", "Python", "C++")));
         } catch (NumberFormatException e) {
             System.out.println("Error: Gaji harus berupa angka.");
         } catch (IllegalArgumentException e) {
@@ -26,10 +26,10 @@ public class Perusahaan {
 
         try {
             System.out.print("Masukkan nama Designer: ");
-            String namaDes = scanner.nextLine();
+            String namaDesigner = scanner.nextLine();
             System.out.print("Masukkan gaji Designer: ");
-            double gajiDes = Double.parseDouble(scanner.nextLine());
-            daftarPegawai.add(new Designer(namaDes, gajiDes, Arrays.asList("Photoshop", "Figma")));
+            double gajiDesigner = Double.parseDouble(scanner.nextLine());
+            daftarPegawai.add(new Designer(namaDesigner, gajiDesigner, Arrays.asList("Photoshop", "Figma")));
         } catch (NumberFormatException e) {
             System.out.println("Error: Gaji harus berupa angka.");
         } catch (IllegalArgumentException e) {
